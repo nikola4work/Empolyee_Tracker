@@ -19,3 +19,15 @@ connection.connect(function(err) {
     if (err) throw err;
     startTracker();
 });
+
+startTracker = () => {
+    inquirer.prompt({
+            name: "trackerList",
+            type: 'list',
+            message: 'Choose to get started: ',
+            choice: tracker;
+        })
+        .then(function(trackerChoice) {
+            trackerAction(trackerChoice);
+        })
+}
