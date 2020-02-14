@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/nikola4work/Empolyee_Tracker/issues"
   },
-  "homepage": "https://github.com/nikola4work/Empolyee_Tracker#readme"
+  "homepage": "https://github.com/nikola4work/Empolyee_Tracker#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "console.table": "^0.10.0",
+    "inquirer": "^7.0.4",
+    "mysql": "^2.18.1"
+  }
 }
