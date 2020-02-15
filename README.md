@@ -37,7 +37,7 @@ Build a command-line application that at a minimum allows the user to:
 ## Live Preview
 
 
-<img src="https://github.com/nikola4work/NoteTaker_App/blob/master/images/notes.gif">
+<img src="https://github.com/nikola4work/Empolyee_Tracker/blob/master/Gif/empTracker.gif">
 
 
 
