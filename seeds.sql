@@ -1,7 +1,7 @@
-USE employeeTracker_db;
+USE emptracker_db;
 
 -- Insert into department table
-INSERT INTO employeeTracker_db.department
+INSERT INTO emptracker_db.department
     (name)
 VALUES
     ("Technology"),
@@ -10,7 +10,7 @@ VALUES
     ("Accounting/Finance");
 
 -- Insert into role table
-INSERT INTO employeeTracker_db.role
+INSERT INTO emptracker_db.role
     (title, salary, department_id)
 VALUES
     ('Engineer', 90000, 1),
@@ -18,19 +18,19 @@ VALUES
     ('Sales Manager', 64990, 3),
     ('Accountant', 75000, 4);
 
-
-INSERT INTO employeeTracker_db.employee
+-- Insert into employee table
+INSERT INTO emptracker_db.employee
     (first_name, last_name, role_id)
 VALUES
-    ('Gene', 'Edwards', 1),
-    ('Siavash', 'Ashkiani', 2),
+    ('Niko', 'Jovanovic', 1),
+    ('Gene', 'Edwards', 2),
     ('Lusio', 'Filiba', 4),
-    ('Mravin', 'Castro', 1),
-    ('Niko', 'Jovanovic', 3),
     ('Lawrence', 'Kirk', 1),
+    ('Marvin', 'Castro', 3),
+    ('Siavash', 'Ashkiani', 1),
     ('Ranjan', 'Biswas', 4);
 
--- Add a manager to two employee
-UPDATE employeeTracker_db.employee
+-- Add a manager to two employees
+UPDATE emptracker_db.employee
 SET manager_id = 7
 WHERE (id = 1 OR id = 6)
